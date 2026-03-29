@@ -45,7 +45,7 @@ const Navbar = ({ setIsSidebarOpen }) => {
 
                     {/* User Button */}
                     <UserButton />
-                    {/* <img src={assets.profile_img_a} alt="User Avatar" className="size-7 rounded-full" /> */}
+                    {/* s<img src={assets.profile_img_a} alt="User Avatar" className="size-7 rounded-full" /> */}
                 </div>
             </div>
         </div>
