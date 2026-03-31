@@ -4,8 +4,7 @@ import prisma from "../prisma.config.js"
 // Create a client to send and receive events
 export const inngest = new Inngest({ id: "taskforge-app" });
 
-// Create an empty array where we'll export future Inngest functions
-export const functions = [];
+
 
 // Inngest function to Save user to database
 export const syncUserCreation = inngest.createFunction(
@@ -65,3 +64,7 @@ export const syncUserUpdate = inngest.createFunction(
     })
   }
 )
+
+
+// Create an empty array where we'll export future Inngest functions
+export const functions = [syncUserCreation, syncUserDeletion, syncUserUpdate];
